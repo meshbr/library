@@ -1,4 +1,4 @@
-Library ![Supported node versions](https://img.shields.io/badge/dynamic/json?color=informational&label=node&query=%24.engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Fnytimes%2Flibrary%2Fmain%2Fpackage.json) [![Tests](https://github.com/nytimes/library/actions/workflows/test.yaml/badge.svg)](https://github.com/nytimes/library/actions/workflows/test.yaml)
+Library ![Supported node versions](https://img.shields.io/badge/dynamic/json?color=informational&label=node&query=%24.engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Fnytimes%2Flibrary%2Fmain%2Fpackage.json) [![Tests](https://github.com/meshbr/library/actions/workflows/test.yaml/badge.svg)](https://github.com/meshbr/library/actions/workflows/test.yaml)
 ========
 
 A collaborative newsroom documentation site, powered by Google Docs.
@@ -56,7 +56,7 @@ Here are some of the organizations using Library so far.
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/nytimes/library/blob/master/CONTRIBUTING.md) for information on how to contribute code and/or documentation on GitHub or on the [demo site](https://nyt-library-demo.herokuapp.com).
+See [CONTRIBUTING.md](https://github.com/meshbr/library/blob/master/CONTRIBUTING.md) for information on how to contribute code and/or documentation on GitHub or on the [demo site](https://nyt-library-demo.herokuapp.com).
 
 ## Questions
 
@@ -116,9 +116,9 @@ The HTML parsing tests are based on the [Supported Formats doc](https://docs.goo
 
 ## Customization
 Styles, text, caching logic, and middleware can be customized to
-match the branding of your organization. This is covered in the [customization readme](https://github.com/nytimes/library/blob/master/custom/README.md).
+match the branding of your organization. This is covered in the [customization readme](https://github.com/meshbr/library/blob/master/custom/README.md).
 
-A sample customization repo is provided at [nytimes/library-customization-example](https://github.com/nytimes/library-customization-example).
+A sample customization repo is provided at [nytimes/library-customization-example](https://github.com/meshbr/library-customization-example).
 
 
 ## Deploying the app
