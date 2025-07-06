@@ -66,7 +66,7 @@ If you have questions about how to get your copy of Library up and running, [joi
 
 1. Clone and `cd` into the repo:
 
-   `git clone git@github.com:nytimes/library.git && cd library`
+   `git clone git@github.com:meshbr/library.git && cd library`
 
 
 2. From the Google API console, create or select a project, then create a service account with the Cloud Datastore User role. It should have API access to Drive and Cloud Datastore. Store these credentials in `server/.auth.json`.
@@ -118,7 +118,7 @@ The HTML parsing tests are based on the [Supported Formats doc](https://docs.goo
 Styles, text, caching logic, and middleware can be customized to
 match the branding of your organization. This is covered in the [customization readme](https://github.com/meshbr/library/blob/master/custom/README.md).
 
-A sample customization repo is provided at [nytimes/library-customization-example](https://github.com/meshbr/library-customization-example).
+A sample customization repo is provided at [meshbr/library-customization-example](https://github.com/meshbr/library-customization-example).
 
 
 ## Deploying the app
@@ -138,14 +138,14 @@ Set your app's `GOOGLE_APPLICATION_JSON`, `GOOGLE_CLIENT_ID`, and `GOOGLE_CLIENT
 ### Using Google App Engine
 You can also deploy Library to GAE, using the included `app.yaml`. Note that you will need to enable billing on your GCP project in order to use Google App Engine. More detailed instructions are provided on the [demo site](https://nyt-library-demo.herokuapp.com/get-started/deploying-library-google-app-engine).
 
-### Using Docker [![Dockerhub](https://img.shields.io/docker/v/nytimes/library?logo=docker)](https://hub.docker.com/r/nytimes/library/tags)
+### Using Docker [![Dockerhub](https://img.shields.io/docker/v/meshbr/library?logo=docker)](https://hub.docker.com/r/meshbr/library/tags)
 Library can be used as a base image for deployment using Docker. This allows you
 to automate building and deploying a custom version of Library during Docker's
 build phase. If you create a repo with the contents of your `custom` folder, you
 could deploy library from that repo with a Dockerfile like the following:
 
 ```Dockerfile
-FROM nytimes/library
+FROM meshbr/library
 
 # copy custom files to library's custom repo
 COPY . ./custom/
