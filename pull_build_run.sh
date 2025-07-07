@@ -3,6 +3,7 @@ set -euo pipefail
 
 cd /root/library
 
+# pull newest code changes
 git reset --hard HEAD
 git pull origin main
 
