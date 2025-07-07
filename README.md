@@ -69,7 +69,7 @@ If you have questions about how to get your copy of Library up and running, [joi
    `git clone git@github.com:meshbr/library.git && cd library`
 
 
-2. From the Google API console, create or select a project, then create a service account with the Cloud Datastore User role. It should have API access to Drive and Cloud Datastore. Store these credentials in `server/.auth.json`.
+2. From the Google API console, create or select a project, then create a service account with the Cloud Datastore User role. It should have API access to Drive and Cloud Datastore. Store these credentials in `server/service-account.json`.
 
    - To use oAuth, you will also need to create oAuth credentials.
    - To use the Cloud Datastore API for reading history, you will need to add in your `GCP_PROJECT_ID`.
