@@ -16,13 +16,11 @@ $gray-60      : #ddd;
 $gray-70      : #ebebeb;
 $gray-80      : #f3f3f3;
 $gray-90      : #f7f7f7;
-
-
-$offwhite: #ececec;
-$accent: #f15a2e;
-$accent-light: lighten($accent, 25%);
+$offwhite     : #ececec;
+$accent       : #f15a2e;
+$accent-light : lighten($accent, 25%);
 $accent-lightest: #FCF6F6;
-$accent-dark: darken($accent, 15%);
+$accent-dark  : darken($accent, 15%);
 $heading-color: #651525;
 
 body {
