@@ -3,6 +3,12 @@ set -euo pipefail
 
 cd /root/library
 
+git reset --hard HEAD
+git pull origin main
+
+# change permissions after pulling newest files
+chmod +x /root/library/*.sh
+
 # Remove the previous image
 docker stop mesh-library-app
 docker rm mesh-library-app
