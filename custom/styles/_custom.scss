@@ -30,9 +30,11 @@ body {
 .masthead {
     background: $heading-color;
 }
-
 .search-container .icon {
     background: $accent;
+}
+.search-container .icon:hover, .search-container:hover .icon:hover {
+    background: $heading-color;
 }
 
 .button.btn-cat {
@@ -44,11 +46,11 @@ body {
 //------------------------------------------------------------------------------
 
 a {
-    color: #651525;
+    color: $heading-color;
 }
 
-.branding-label{
-    font-weight: 700;
+a:hover {
+    color: $accent;
 }
 
 body {
@@ -61,8 +63,37 @@ body {
     font-weight: 600;
 }
 
+#main-search-page .main-item .branding .branding-label, .masthead .container .branding .branding-label {
+    font-weight: 700;
+}
+.masthead .container .branding .branding-label a:hover {
+    color: $accent;
+}
+
+.breadcrumb-item {
+    color: $accent;
+}
+
+.breadcrumb-item a:hover,.breadcrumb-item a:visited {
+    color: $white;
+    text-decoration: underline;
+    text-decoration-color: $accent;
+}
+
+.g-upper-body .tool a:hover,.g-upper-body .tool a:hover .fa {
+    color: $accent;
+}
+
+.button.btn-plaintext:hover {
+    color: $accent;
+}
+
 // Layout & Styles
 //------------------------------------------------------------------------------
+
+.masthead .container .branding .branding-heading .logo {
+    filter: none;
+}
 
 .button.btn-cat {
     border-radius: 50px;
@@ -70,4 +101,10 @@ body {
 
 .button.btn-homepage:hover, .button.btn-cat:hover{
     background: $accent;
+}
+
+.button.btn-homepage {
+    -webkit-box-shadow: 2.5px 2.5px 0px -1px $accent;
+    -moz-box-shadow: 2.5px 2.5px 0px -1px $accent;
+    box-shadow: 2.5px 2.5px 0px -1px $accent;
 }
