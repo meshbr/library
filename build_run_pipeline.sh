@@ -8,7 +8,7 @@ docker stop mesh-library-app
 docker rm mesh-library-app
 
 # Rebuild the Docker image
-docker build -t mesh-library-app .
+# docker build --no-cache -t mesh-library-app .
 
 docker run -d -p 3000:3000 \
   --name mesh-library-app \
