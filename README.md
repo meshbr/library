@@ -82,21 +82,26 @@ If you have questions about how to get your copy of Library up and running, [joi
 
 ```bash
 # node environment (development or production)
-NODE_ENV=development
+NODE_ENV=production
+
 # Google oAuth credentials
 GOOGLE_CLIENT_ID=123456-abcdefg.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=abcxyz12345
 GCP_PROJECT_ID=library-demo-1234
+GOOGLE_APPLICATION_CREDENTIALS=path/to/service-account.json
+
 # comma separated list of approved access domains or email addresses (regex is supported).
-APPROVED_DOMAINS="nytimes.com,dailypennsylvanian.com,(.*)?ar.org,demo.user@demo.site.edu"
+APPROVED_DOMAINS="whenwemesh.com,digital@whenwemesh.com"
 SESSION_SECRET=supersecretvalue
 
 # Google drive Configuration
 # team or folder ("folder" if using a folder instead of a team drive)
 DRIVE_TYPE=team
+
 # the ID of your team's drive or shared folder. The string of random numbers and letters at the end of your team drive or folder url.
 DRIVE_ID=0123456ABCDEF
 ```
+
 Make sure to not put any comments in the same line as `DRIVE_TYPE` and `DRIVE_ID` vars.
 
 Ensure you share your base drive or folder with the email address associated with the service account created in step 2.
