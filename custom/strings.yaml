@@ -25,7 +25,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText: Questions? Contact MESH IT.
+  helpText: Questions? Contact MESH IT (digital@whenwemesh.com).
   defaultEmail: digital@whenwemesh.com
   buttons:
     edit: Edit This Page
