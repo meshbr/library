@@ -43,7 +43,11 @@ body {
 // Type Styles
 //------------------------------------------------------------------------------
 
-#main-search-page .main-item .branding .branding-label {
+a {
+    color: #651525;
+}
+
+.branding-label{
     font-weight: 700;
 }
 
@@ -62,4 +66,8 @@ body {
 
 .button.btn-cat {
     border-radius: 50px;
+}
+
+.button.btn-homepage:hover, .button.btn-cat:hover{
+    background: $accent;
 }
