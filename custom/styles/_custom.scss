@@ -33,9 +33,10 @@ body {
 .search-container .icon {
     background: $accent;
 }
-.search-container .icon:hover, .search-container:hover .icon:hover {
+.search-container .icon:hover, .search-container:hover .icon:hover, #main-search-page .main-item .search-container:hover .icon:hover, #main-search-page .main-item .search-container .icon:hover {
     background: $heading-color;
 }
+#main-search-page .main-item .search-container .icon
 
 .button.btn-cat {
     background: $heading-color;
@@ -101,6 +102,7 @@ body {
 
 .button.btn-homepage:hover, .button.btn-cat:hover{
     background: $accent;
+    color: $white;
 }
 
 .button.btn-homepage {
