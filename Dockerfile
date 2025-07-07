@@ -5,7 +5,8 @@ WORKDIR /usr/src/app
 
 # Copy package files first for dependency installation
 COPY package.json package-lock.json ./
-RUN npm install  # Install all dependencies
+COPY server/service-account.json /usr/src/app/server/
+RUN npm install
 
 # Now copy the rest of your application code
 COPY . .
@@ -13,5 +14,5 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# (Optional) Set the CMD to run your application when the container starts.
+# Set the CMD to run your application when the container starts.
 CMD ["npm", "start"]
