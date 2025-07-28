@@ -12,6 +12,7 @@ fi
 echo "Starting the mesh-library-app container..."
 docker run -d -p 3000:3000 \
   --name mesh-library-app \
+  --restart always \
   --env-file .env \
   -v /root/library/custom:/usr/src/app/custom \
   mesh-library-app
