@@ -13,7 +13,7 @@ branding:
 landing:
   tagline: One place for all MESH processes and documentation.
   viewAll: View All
-  quickLink: <a href="/how-to-use-mesh-library">Using MESH Library.</a>
+  quickLink: <a href="/using-mesh-library">Using MESH Library.</a>
   modules:
     - tag: team
       label: Find by team

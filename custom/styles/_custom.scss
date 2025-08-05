@@ -17,29 +17,53 @@ $gray-70      : #ebebeb;
 $gray-80      : #f3f3f3;
 $gray-90      : #f7f7f7;
 $offwhite     : #ececec;
-$accent       : #f15a2e;
+
+
+$maroon: #651525;
+$maroon-900: #7f3c49;
+$maroon-700: #98636e;
+$maroon-500: #b28a92;
+$maroon-300: #ccb1b6;
+$maroon-100: #e0d0d3;
+
+$orange: #f15a2e;
+$orange-900: #f37651;
+$orange-700: #f69174;
+$orange-500: #f8ac96;
+$orange-300: #fac8b9;
+$orange-100: #fcded5;
+
+$gold: #eea335;
+$gold-900: #f1b257;
+$gold-700: #f4c278;
+$gold-500: #f6d19a;
+$gold-300: #f9e0bc;
+$gold-100: #fcedd7;
+
+
+$accent       : $orange;
 $accent-light : lighten($accent, 25%);
 $accent-lightest: #FCF6F6;
 $accent-dark  : darken($accent, 15%);
-$heading-color: #651525;
+$heading-color: $maroon;
 
-body {
-    color: $black;
-}
 
 .masthead {
-    background: $heading-color;
+    background: $maroon;
 }
 .search-container .icon {
-    background: $accent;
+    background: $orange;
 }
-.search-container .icon:hover, .search-container:hover .icon:hover, #main-search-page .main-item .search-container:hover .icon:hover, #main-search-page .main-item .search-container .icon:hover {
-    background: $heading-color;
+.search-container .icon:hover, 
+.search-container:hover .icon:hover, 
+#main-search-page .main-item .search-container:hover .icon:hover,
+#main-search-page .main-item .search-container .icon:hover {
+    background: $maroon;
 }
-#main-search-page .main-item .search-container .icon
 
+#main-search-page .main-item .search-container .icon
 .button.btn-cat {
-    background: $heading-color;
+    background: $maroon;
     color: $white;
 }
 
@@ -47,26 +71,55 @@ body {
 //------------------------------------------------------------------------------
 
 a {
-    color: $heading-color;
-}
-
-a:hover {
-    color: $accent;
+    color: $maroon;
 }
 
 body {
     font-weight: 400;
     letter-spacing: .04em;
     line-height: 1.5;
+    color: $black;
 }
 
-.button.btn-cat {
+.button {
     font-weight: 600;
 }
 
-#main-search-page .main-item .branding .branding-label, .masthead .container .branding .branding-label {
-    font-weight: 700;
+.button.btn-cat, .button.btn-homepage {
+    border-radius: 50px;
 }
+
+.button.btn-cat:hover{
+    background: $accent;
+    color: $white;
+}
+
+.button.btn-homepage {
+    font-size: 20px;
+    width: 100%;
+
+
+    background: $maroon;
+    color: $white;
+
+    &:hover {
+        background: $orange;
+        color: $white;
+    }
+}
+
+.button.btn-plaintext:hover {
+    color: $accent;
+}
+
+// Header Bar
+//------------------------------------------------------------------------------
+
+
+.masthead .container .branding .branding-heading .logo {
+    filter: invert(100%) grayscale(100%) brightness(200%);
+}
+
 .masthead .container .branding .branding-label a:hover {
     color: $accent;
 }
@@ -77,7 +130,7 @@ body {
 
 .breadcrumb-item a:hover,.breadcrumb-item a:visited {
     color: $white;
-    text-decoration: underline;
+    text-decoration-line: underline;
     text-decoration-color: $accent;
 }
 
@@ -85,36 +138,79 @@ body {
     color: $accent;
 }
 
-.button.btn-plaintext:hover {
-    color: $accent;
+
+// Main Content Area
+//------------------------------------------------------------------------------
+
+.g-upper-body h1.headline {
+    font-weight: 800;
+}
+
+.g-body .g-main-content span[style*="text-decoration"][style*="underline"]:has(> a) {
+    // Google docs sends link underlines as a wrapped span, gotta get rid of that
+    text-decoration: none !important;
+}
+.g-body .g-main-content a {
+    color: currentColor;
+
+    text-decoration-style: underline;
+    text-decoration-color: $maroon;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    font-weight: 500;
+}
+
+.g-body .g-main-content > * {
+    margin-bottom: 1.125em
 }
 
 .g-body .g-main-content p {
-    margin-bottom: 1.125rem;
+    margin-bottom: 1em;
+}
+.g-body .g-main-content p:empty {
+    // Hide empty p tags that google docs incentivizes you creating
+    display: none;
 }
 
-// Layout & Styles
+.g-body .g-main-content li + li {
+    margin-top: 0.5rem;
+}
+.g-body .g-main-content li:empty {
+    // Hide any empty list items
+    display: none;
+}
+
+
+.g-body .g-left-panel .section-kicker {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.g-body .g-left-panel ul:is(.section, .sibling) li:has(> a:empty) {
+    // Hides empty links in the sidebar
+    display: none;
+}
+.g-body .g-left-panel ul:is(.section, .sibling):has(ul.subsection) > li {
+    font-weight: 500;
+    padding-block: 8px;
+}
+.g-body .g-left-panel ul:is(.section, .sibling) li:has(+ li > ul.subsection) {
+    // Checks if this li has a subsection following it since the markup isn't actually heirarchical for some reason
+    border-bottom: 0;
+    padding-block-end: 0;
+}
+.g-body .g-left-panel ul:is(.section, .sibling) li:has(> ul.subsection) {
+    padding-block-start: 0;
+}
+
+
+// Search Page
 //------------------------------------------------------------------------------
 
-.masthead .container .branding .branding-heading .logo {
-    filter: none;
+#main-search-page .main-item .branding .branding-label, .masthead .container .branding .branding-label {
+    font-weight: 700;
 }
-
-.button.btn-cat {
-    border-radius: 50px;
-}
-
-.button.btn-homepage:hover, .button.btn-cat:hover{
-    background: $accent;
-    color: $white;
-}
-
-.button.btn-homepage {
-    -webkit-box-shadow: 2.5px 2.5px 0px -1px $accent;
-    -moz-box-shadow: 2.5px 2.5px 0px -1px $accent;
-    box-shadow: 2.5px 2.5px 0px -1px $accent;
-}
-
 #main-search-page .main-item .featured-cat .cat-container.style-docs ul a:hover {
     color: $white;
 }
