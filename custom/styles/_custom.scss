@@ -95,12 +95,14 @@ body {
 }
 
 .button.btn-homepage {
-    font-size: 20px;
-    width: 100%;
+    font-size: 18px;
+    padding: 10px 25px;
 
 
     background: $maroon;
-    color: $white;
+    color: $white !important;
+
+    box-shadow: none;
 
     &:hover {
         background: $orange;
