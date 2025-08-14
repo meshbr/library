@@ -83,11 +83,11 @@
 // Breadcrumb
 //------------------------------------------------------------------------------
 .breadcrumb {
-  padding-left: 12px;
+  padding-left: 8px;
   float: left;
   // padding-top: 1px;
   // display: inline-grid;
-  margin: 12px 0;
+  margin: 15px 0;
   display: none;
 
   @include mixins.tablet{
@@ -104,18 +104,18 @@
   letter-spacing: 0.01em;
   line-height: 17px;
 
-  a {
-    text-decoration-line: none;
-  }
-
   a:hover {
-    text-decoration-line: underline;
-    outline: 0;
+      text-decoration: underline;
+      outline: 0;
   }
 
   a:visited {
-    opacity: 0.9;
-    text-decoration-style: dotted;
+      color: $accent-light;
+  }
+
+  a:link {
+      text-decoration: none;
+      color: $accent-light;
   }
 }
 
