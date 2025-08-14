@@ -152,7 +152,7 @@ body {
         color: $white;
         text-decoration-line: underline;
         text-decoration-style: dashed;
-        text-decoration-color: $gray-70;
+        text-decoration-color: $gray-50;
         text-decoration-thickness: 1px;
     }
 
@@ -209,6 +209,10 @@ body {
     display: none;
 }
 
+.g-body .g-main-content :is(ul, ol) {
+    margin-bottom: 1em;
+}
+
 .g-body .g-main-content li + li {
     margin-top: 0.5rem;
 }
@@ -237,7 +241,7 @@ body {
     padding-block-end: 0;
 }
 .g-body .g-left-panel ul:is(.section, .sibling) li:has(> ul.subsection) {
-    padding-block-start: 0;
+    padding-block-start: 2px;
 }
 
 
