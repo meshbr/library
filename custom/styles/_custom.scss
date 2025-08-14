@@ -145,26 +145,27 @@ body {
     color: $orange;
 
     a {
-        text-decoration-line: underline;
+        text-underline-offset: 2px;
     }
 
-    a:link {
+    a:link, a:visited {
         color: $white;
-        text-decoration-style: dotted;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $gray-70;
+        text-decoration-thickness: 1px;
     }
 
-    a:hover {
+    a:hover, a:focus {
         color: $white;
         outline: 0;
+        text-decoration-line: underline;
         text-decoration-style: solid;
         text-decoration-color: $orange;
     }
 
     a:visited {
-        color: $white;
         opacity: 0.9;
-        text-decoration-color: $orange;
-        text-decoration-style: dotted;
     }
 }
 
