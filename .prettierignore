@@ -4,8 +4,14 @@
 **/*.min.js
 **/*.svg
 
-# Ignore everything
-*
+package.json
+package-lock.json
 
-# But not these files...
-!/custom/**/*
+# Ignore stuff we want to merge in later
+/bin/
+/config/
+/layouts/
+/public/
+/server/
+/styles/
+/test/
