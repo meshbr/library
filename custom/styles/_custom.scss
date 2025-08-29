@@ -140,10 +140,10 @@ body {
     text-decoration: none !important;
 }
 .g-body .g-main-content a {
-    color: currentColor;
+    color: $maroon;
 
     text-decoration-style: underline;
-    text-decoration-color: $maroon;
+    text-decoration-color: $orange;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 
@@ -158,7 +158,8 @@ body {
     margin-bottom: 1em;
 }
 .g-body .g-main-content p:empty {
-    // Hide empty p tags that google docs incentivizes you creating    display: none;
+    // Hide empty p tags that google docs incentivizes you creating
+    display: none;
 }
 
 .g-body .g-main-content :is(ul, ol) {
