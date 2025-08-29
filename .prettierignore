@@ -1,0 +1,11 @@
+/node_modules/
+/vendor/
+**/*.min.css
+**/*.min.js
+**/*.svg
+
+# Ignore everything
+*
+
+# But not these files...
+!/custom/**/*

@@ -2,28 +2,29 @@
 
 $heading-color: $maroon;
 
-
- // Example Light Theme
-$font-branding:                -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$font-headline:                -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$font-sans:                    -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$masthead-background:          $gray-10;
-$main-homepage-background:     $white;
-$main-homepage-icon-color:     $black;
-$main-homepage-icon-border:    $black;
-$main-page-text-color:         $gray-35;
-$main-page-btn-color:          $gray-45;
-$search-container-background:  #e6e2e2;
-$search-container-hover:       $gray-70;
-$btn-homepage-background:      $white;
-$btn-homepage-border:          $black;
-$btn-default-background:       $white;
+// Example Light Theme
+$font-branding: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+$font-headline: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+$font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$masthead-background: $gray-10;
+$main-homepage-background: $white;
+$main-homepage-icon-color: $black;
+$main-homepage-icon-border: $black;
+$main-page-text-color: $gray-35;
+$main-page-btn-color: $gray-45;
+$search-container-background: #e6e2e2;
+$search-container-hover: $gray-70;
+$btn-homepage-background: $white;
+$btn-homepage-border: $black;
+$btn-default-background: $white;
 $btn-default-background-hover: $accent;
-$btn-default-border:           $black;
-$btn-default-text-color:       $black;
-$btn-default-text-hover:       $black;
-$btn-user-initial:             $gray-50;
-$elem-link-color:              $gray-50;
-$elem-active-link-color:       $gray-50;
-$elem-link-accent:             $accent;
-$nav-text-color:               $gray-40;
+$btn-default-border: $black;
+$btn-default-text-color: $black;
+$btn-default-text-hover: $black;
+$btn-user-initial: $gray-50;
+$elem-link-color: $gray-50;
+$elem-active-link-color: $gray-50;
+$elem-link-accent: $accent;
+$nav-text-color: $gray-40;

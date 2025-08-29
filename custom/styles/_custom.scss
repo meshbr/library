@@ -4,23 +4,20 @@
 // Color
 //------------------------------------------------------------------------------
 
-
-
 .masthead {
     background: $maroon;
 }
 .search-container .icon {
     background: $orange;
 }
-.search-container .icon:hover, 
-.search-container:hover .icon:hover, 
+.search-container .icon:hover,
+.search-container:hover .icon:hover,
 #main-search-page .main-item .search-container:hover .icon:hover,
 #main-search-page .main-item .search-container .icon:hover {
     background: $maroon;
 }
 
-#main-search-page .main-item .search-container .icon
-.button.btn-cat {
+#main-search-page .main-item .search-container .icon .button.btn-cat {
     background: $maroon;
     color: $white;
 }
@@ -34,7 +31,7 @@ a {
 
 body {
     font-weight: 400;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     line-height: 1.5;
     color: $black;
 }
@@ -43,11 +40,12 @@ body {
     font-weight: 600;
 }
 
-.button.btn-cat, .button.btn-homepage {
+.button.btn-cat,
+.button.btn-homepage {
     border-radius: 50px;
 }
 
-.button.btn-cat:hover{
+.button.btn-cat:hover {
     background: $accent;
     color: $white;
 }
@@ -55,7 +53,6 @@ body {
 .button.btn-homepage {
     font-size: 18px;
     padding: 10px 25px;
-
 
     background: $maroon;
     color: $white !important;
@@ -75,7 +72,6 @@ body {
 // Header Bar
 //------------------------------------------------------------------------------
 
-
 .masthead .container .branding .branding-heading .logo {
     filter: invert(100%) grayscale(100%) brightness(200%);
 }
@@ -87,12 +83,10 @@ body {
     color: $orange;
 }
 
-.breadcrumb { 
+.breadcrumb {
     margin: 12px 0;
     padding-left: 12px;
 }
-
-
 
 .breadcrumb-item {
     display: inline-block;
@@ -106,7 +100,8 @@ body {
         text-underline-offset: 2px;
     }
 
-    a:link, a:visited {
+    a:link,
+    a:visited {
         color: $white;
         text-decoration-line: underline;
         text-decoration-style: dashed;
@@ -114,7 +109,8 @@ body {
         text-decoration-thickness: 1px;
     }
 
-    a:hover, a:focus {
+    a:hover,
+    a:focus {
         color: $white;
         outline: 0;
         text-decoration-line: underline;
@@ -131,7 +127,6 @@ body {
 .g-upper-body .tool a:hover .fa {
     color: $accent;
 }
-
 
 // Main Content Area
 //------------------------------------------------------------------------------
@@ -156,15 +151,14 @@ body {
 }
 
 .g-body .g-main-content > * {
-    margin-bottom: 1.125em
+    margin-bottom: 1.125em;
 }
 
 .g-body .g-main-content p {
     margin-bottom: 1em;
 }
 .g-body .g-main-content p:empty {
-    // Hide empty p tags that google docs incentivizes you creating
-    display: none;
+    // Hide empty p tags that google docs incentivizes you creating    display: none;
 }
 
 .g-body .g-main-content :is(ul, ol) {
@@ -178,7 +172,6 @@ body {
     // Hide any empty list items
     display: none;
 }
-
 
 .g-body .g-left-panel .section-kicker {
     text-transform: uppercase;
@@ -202,10 +195,10 @@ body {
     padding-block-start: 2px;
 }
 
-
 // Search Page
 //------------------------------------------------------------------------------
 
-#main-search-page .main-item .branding .branding-label, .masthead .container .branding .branding-label {
+#main-search-page .main-item .branding .branding-label,
+.masthead .container .branding .branding-label {
     font-weight: 700;
 }
