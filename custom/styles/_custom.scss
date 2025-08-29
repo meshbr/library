@@ -142,13 +142,19 @@ body {
 .g-body .g-main-content a {
     color: $maroon;
 
+    text-decoration-color: $orange;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-color: $orange;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 
     font-weight: 500;
+
+    &:hover,
+    &:focus {
+        color: darken($maroon, 10%);
+        text-decoration-color: $gold;
+    }
 }
 
 .g-body .g-main-content > * {
